@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Test API</title>
+    <meta charset="UTF-8">
+    <meta name="title" content="Test API">
+    <meta name="description" content="Test API">
+    <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <h1>REGISTRO USUARIO</h1>
+</header>
+<nav>
+    <a href="/index.html">Login</a>
+    <a href="/registro.html">Registro</a>
+</nav>
+<section>
+    <div class="form">
+        <div class="failMessage"></div>
+        <form action="#" id="form_registro">
+            <div class="mb-3">
+                <label class="form-label" for="nombre">Nombre</label>
+                <br>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required autofocus>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="correo">Correo</label><br>
+                <input type="text" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="username">Username</label><br>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label><br>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required autocomplete="off">
+            </div>
+
+            <div class="mt-3 text-end">
+                <button class="btn btn-primary w-sm waves-effect waves-light" id="submit_registro_btn" type="button">Registrarse</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/validaciones.js"></script>
+<script src="/js/msg_error.js"></script>
+<script src="/js/registro_usuario.js"></script>
+
+<script>
+    var rutaRegistro = 'http://localhost:4000/api/usuarios/';
+</script>
+
+</body>
+
+</body>
+</html>

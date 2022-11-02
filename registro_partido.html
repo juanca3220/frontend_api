@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Test API</title>
+    <meta charset="UTF-8">
+    <meta name="title" content="Test API">
+    <meta name="description" content="Test API">
+    <link href="/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+    <h1>REGISTRO PARTIDO</h1>
+</header>
+<nav>
+    <a href="/partidos.html">Todos los partidos</a>
+    <a href="/registro_partido.html">Registrar partido</a>
+    <a href="#" id="cerrar_sesion">Cerrar sesión</a>
+</nav>
+<section>
+    <div class="form">
+        <div class="failMessage"></div>
+        <form action="#" id="form_registro">
+            <div class="mb-3">
+                <label class="form-label" for="local">Equipo local</label><br>
+                <select name="local" id="local" required></select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="visitante">Equipo visitante</label><br>
+                <select name="visitante" id="visitante" required></select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="fecha">Fecha</label><br>
+                <input type="date" class="form-control" id="fecha" name="fecha" placeholder="" required>
+            </div>
+
+            <div class="mt-3 text-end">
+                <button class="btn btn-primary w-sm waves-effect waves-light" id="submit_registro_btn" type="button">Registrarse</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/validaciones.js"></script>
+<script src="/js/msg_error.js"></script>
+<script src="/js/registro_partido.js"></script>
+
+<script>
+    var rutaFormLogin = 'index.html';
+    var rutaBuscarEquipos = 'http://localhost:4000/api/equipos/';
+    var rutaPartidos = 'partidos.html';
+    var rutaRegistroPartido = 'http://localhost:4000/api/partidos/';
+    let token = localStorage.getItem('token');
+
+    $(document).ready(function () {
+
+        if(! token){
+            location.href = rutaFormLogin;
+        }
+
+        $('#cerrar_sesion').on('click', function(e) {
+            e.preventDefault();
+            localStorage.clear();
+            location.href = rutaFormLogin;
+        });
+    });
+</script>
+
+</body>
+
+</body>
+</html>
