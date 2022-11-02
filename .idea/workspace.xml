@@ -11,17 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79424cf3-7877-4fcf-abc2-6a9649da0817" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/msg_error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/partidos.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/registro_partido.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/registro_usuario.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/validaciones.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partidos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/registro_partido.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partidos.html" beforeDir="false" afterPath="$PROJECT_DIR$/partidos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/registro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registro_partido.html" beforeDir="false" afterPath="$PROJECT_DIR$/registro_partido.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667327935368</updated>
-      <workItem from="1667327936456" duration="19709000" />
+      <workItem from="1667327936456" duration="20455000" />
     </task>
     <servers />
   </component>
